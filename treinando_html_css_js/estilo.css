@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+   
+    
+}
+
+body{
+    height: 100vh;
+    display: flex ;
+    justify-content: center;
+    background-color: silver;
+    align-items: center;
+}
+
+button{
+        color: white;
+        background-color: #077777;
+        padding: 15px;
+        border-radius: 5px;
+        border: 0px;
+        font-size: large;
+        font-family: 'Courier New', Courier, monospace;
+}
+button:hover{
+    background-color: rgb(72, 54, 151);
+    transition: 0.5s;
+}
+
