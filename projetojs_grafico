@@ -1,1 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <style>
+        body{
+            display: flex;
+            justify-content: start;
+            
+        }
 
+    section{
+       
+        width: 800px;
+        justify-content: center;
+        }
+
+        table{
+            border: solid 2px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+    <!-- Start canvas -> Desenhar elementos gráficos usando js -->
+    <canvas class="line-chart"></canvas>
+
+
+    <!-- Include Chart js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+</section>
+
+    <section>
+    <script>
+        var ctx = document.getElementsByClassName("line-chart");
+        
+        // Type, Data e Options
+        var chartGraph = new Chart(ctx, {
+            type: 'line',
+                data: {
+                labels: ["Seg", "Ter", "Qua", "Qui", "Sex"],
+                datasets: [
+            {
+                label: "EUR - Euro",
+                data: [3, 3 ,4, 3, 4, 3 ,4],
+                borderWidth: 3,
+                borderColor: "rgba(77, 166, 2530.85)",
+                backgroundColor: "transparent",
+                height: "10px",
+                innerWidth: "10px"
+
+
+            },
+            {
+                label: "USD - Dollar",
+                data: [5.24, 5.23, 5.23, 5.18 , 5.21, 5.25 , 5.24],
+                borderWidth: 3,
+                borderColor: "#8b008b",
+                backgroundColor: "transparent",
+                height: "10px",
+                innerWidth: "10px"},
+
+                {
+                label: "CAD - Dollar Canadense",
+                data: [4.16, 4.16, 4.17, 4.15, 4.16, 4.18, 4.19],
+                borderWidth: 3,
+                borderColor: "#FF7F50",
+                backgroundColor: "transparent",
+                height: "10px",
+                innerWidth: "10px"},
+            
+                {
+                label: "GBP - Lira",
+                data: [7.25, 7.23, 7.18, 7.26, 7.26, 7.26 ],
+                borderWidth: 3,
+                borderColor: "#72fa6a",
+                backgroundColor: "transparent",
+                height: "10px",
+                innerWidth: "10px"},
+                {
+                label: "Peso - Argentino",
+                data: [0.05, 0.05, 0.05, 0.05, 0.05, 0.05, 0.05],
+                borderWidth: 3,
+                borderColor: "#4A17D4",
+                backgroundColor: "transparent",
+                height: "10px",
+                innerWidth: "10px"},
+                
+        ]}
+        })
