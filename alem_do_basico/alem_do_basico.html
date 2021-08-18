@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alem do básico jQeury</title>
+        <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+ 
+    <div class="test"></div>
+    <div class="demo">.</div>
+    <div class="demo">.</div>
+    <div class="test">.</div>
+    <div class="demo">.</div>
+    <div><P>.</P> </div>
+    <P>.</P>
+
+    <section>
+        <a href="https://github.com/YagoMathiass?tab=repositories"></a>
+        <a  id="mylink" href="https://github.com/YagoMathiass?tab=repositories"></a>
+
+    </section>
+    <img src="1904665_bar_lines_list_menu_nav_icon.png" alt="image">
+    
+
+    <script type="text/javascript">
+    //1)
+    $(document).ready(function () {
+        $("div").text()
+
+    //2)
+         $("div").html()
+        
+    //3)
+        $("a").attr("href");
+
+    //4)
+         $("div").text("Hello World");
+
+    //5)
+        $("img").attr("src", "myimage.jpg");
+
+    //6)
+        $("#mylink").text("demo");
+        $("#mylink").attr("href", "https://www.demo.com");
+
+    //7)
+        $("p").append("SIM")
+        
+    //8)
+         $("p").prepend("SIM")
+
+    //9)
+        /$("div").hide()
+
+    //10)
+         $("div").children().empty()
+        
+    //11)
+        
+        $("div").remove(".test, .demo")
+    });
+
+
+    </script>
+</body>
+</html>
