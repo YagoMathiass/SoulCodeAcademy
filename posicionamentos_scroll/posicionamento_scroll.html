@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #ala {
+            height: 10vh;
+            width: 10vw;
+            position: absolute;
+            left: 50px;
+            top: 80px;
+            display: none;
+        }
+
+        #menu-vertical {
+            position: absolute;
+            z-index: 999;
+            left: 5px;
+            top: 5px;
+            overflow: hidden;
+            border: 1px dashed #CCC;
+            padding: 6px;
+            display: none;
+        }
+
+        a:hover {
+            background-color: rgb(153, 184, 241);
+            transition: 0.6s;
+        }
+
+        a {
+            color: darkslategray;
+            text-decoration: none;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: rgb(247, 247, 247);
+            padding: 10px;
+            border-radius: 10px;
+
+        }
+
+        body {
+            display: block;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header {
+            background-color: #151f5d;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 250px;
+        }
+
+        img {
+            height: 27vh;
+            width: 240px;
+        }
+
+        li {
+            float: left;
+            list-style: none;
+            margin: 3px;
+        }
+
+        #div {
+            top: 0px;
+            left: 10px;
+            margin: 30px;
+            overflow: scroll;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <section>
+            <img src="1904665_bar_lines_list_menu_nav_icon.png" id="ala" onclick="mostraParagrafo()">
+            <img src="https://s2.glbimg.com/yCWJHRmhUOcOCI0GcqZxYHYbQ2w=/0x0:620x413/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_cf9d035bf26b4646b105bd958f32089d/internal_photos/bs/2020/i/4/xHRXmLR5SsRwzyZk6e6A/2019-09-09-db2019al01916-overfull.jpg"
+                alt="Logo VW">
+        </section>
+
+
+        <div id="menu-vertical">
+            <table cellpadding="10" cellspacing="40">
+                <tr>
+                    <td><a href="index.html">Página Inicial</a></td>
+                </tr>
+                <tr>
+                    <td><a href="quem-somos.html">Quem Somos</a></td>
+                </tr>
+                <tr>
+                    <td><a href="fotos.html">Fotos</a></td>
+                </tr>
+                <tr>
+                    <td><a href="contato.html">Fale Conosco</a></td>
+                </tr>
+                <tr>
+                    <td id="ali" onclick="escondeParagrafo()"><a>. . .</a></td>
+                </tr>
+            </table>
+        </div>
+
+
+        <nav>
+            <ul id="menu-horizontal">
+                <li><a href="index.html">Página Inicial</a></li>
+
+                <li><a href="quem-somos.html">Quem Somos</a></li>
+
+                <li><a href="fotos.html">Fotos</a></li>
+
+                <li><a href="contato.html">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div id="div">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, autem. Lorem ipsum dolor, sit amet
+            consectetur adipisicing elit. Possimus eveniet porro numquam ad provident quod expedita aliquid labore ex.
+            Reprehenderit dicta culpa tempore assumenda dolorem nemo dolor quaerat fugit placeat ea maxime quia
+            architecto quos, temporibus eius ut quod fugiat excepturi nihil, ipsa qui soluta! Molestiae, ullam veniam
+            magni nesciunt ratione quo hic eveniet deserunt voluptatibus sint veritatis numquam ab molestias iste
+            explicabo sit neque earum laudantium. Consequuntur possimus fugit odit, necessitatibus error sed sint sit
+            eos non! Aliquam nam, vero eum, dolorem qui voluptatibus inventore consequuntur iusto eius reprehenderit
+            similique quidem nihil ea perspiciatis ducimus aut. Debitis et beatae explicabo? Quo est quisquam sapiente
+            nam? Ipsum, eaque ullam praesentium quibusdam iusto atque perspiciatis voluptatem nulla aliquid. Pariatur,
+            dolorum molestiae labore nisi praesentium optio. Pariatur et, numquam amet sed repellat vel, quos fuga
+            aspernatur eveniet qui omnis laudantium a repudiandae maiores voluptate veniam tenetur nostrum cupiditate
+            error tempore consectetur! Tenetur non est nesciunt reiciendis architecto officiis doloremque similique
+            inventore totam autem, deleniti, quo, molestias nam labore! Aspernatur commodi reiciendis dolorem rerum
+            numquam iure dicta quibusdam dignissimos minus excepturi ut inventore et, voluptatem suscipit vitae incidunt
+            enim. Fuga sint possimus repellat. Aspernatur ipsa quas architecto, neque cum corporis voluptates illum et?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius laborum officiis esse nostrum libero, nulla
+            atque, quisquam a necessitatibus dolores aspernatur voluptatum nesciunt ducimus ut ratione explicabo, nam
+            unde pariatur accusamus magnam corporis nihil! Error, porro dicta! Aliquid, temporibus reiciendis fugiat
+            quaerat quidem ea laudantium sed praesentium ipsum aut! Iusto, soluta? Quas, suscipit veniam? Sunt saepe
+            animi, rerum cumque ipsam voluptatemicabo
+            iste, magnam totam sed dolorum mollitia sapiente blanditiis eos? Ullam sint ipsum soluta, ea voluptatibus
+            nemo voluptas repudiandae temporibus iure odit reiciendis dolorum cupiditate non natus neque sit dicta eius
+            ut atque perspiciatis delectus animi sapiente! Laudantium, nobis sapiente saepe ullam, eaque consectetur
+            error nam quisquam magnam temporibus excepturi explicabo officia earum possimus! Nostrum dolore temporibus
+            magni, harum deleniti ducimus, maxime quis tempora beatae repellendus ex facere pariatur ratione! Qui,
+            numquam veritatis delectus maxime blanditiis ducimus doloremque ipsam debitis adipisci amet? Rem error,
+            pariatur quibusdam ipsum, obcaecati sit iure aperiam ullam, cupiditate veniam ut nostrum sapiente porro
+            totam ipsa eum laborum voluptatibus. Ratione debitis magni eum maiores reiciendis eos quo cumque officiis
+            explicabo nostrum iusto quasi consectetur consequatur error, doloremque consequuntur sapiente eligendi,
+            suscipit fugit. Facere laborum nobis sit expedita corporis laboriosam veritatis tempore possimus recusandae
+            vitae atque at rem dolorum molestias necessitatibus quae voluptatibus numquam qui consectetur minima, sunt
+            rerum. Porro, hic maiores autem magni earum dignissimos consequuntur sequi.
+        </p>
+
+    </div>
+    <button id="button1">Ver posição do scroll</button>
+    <button id="button2">Ver altura</button>
+
+
+    <script type="text/javascript">
+        window.addEventListener('resize', function () {
+            var tam = $(window).width();
+            if (tam >= 700) {
+                $("#menu-horizontal").show("slow");
+                $("#ala").hide("slow");
+                $("#menu-vertical").hide("slow");
+
+            } if (tam <= 700) {
+                $("#ala").show("slow");
+                $("#menu-horizontal").hide("slow");
+            }
+        });
+
+        function mostraParagrafo() {
+            $("#menu-vertical").slideDown("slow");
+            $("#ala").hide("slow");
+        }
+
+        function escondeParagrafo() {
+            $("#menu-vertical").slideUp("slow");
+            $("#ala").show("slow");
+        }
+
+
+
+
+        $(document).ready(function () {
+            var div = $("#div");
+            divoffset = div.offset()
+            var divp = $("#div");
+            divposition = divp.position()
+
+
+            // alert("left: " + divoffset.left + ", top: " + divoffset.top);
+            // alert("left: " + divposition.left + ", top: " + divposition.top);
+        });
+
+        $(document).ready(function () {
+            $("div").height("500px").width("500px")
+            $("#button1").click(function () {
+                var valor_bloco = $("#div").scrollTop()
+                alert(Math.round(valor_bloco));
+            });
+
+
+            $("#button2").click(function () {
+                var ver_altura = $("div").height()
+                //$("div").innerHeight()
+                alert(ver_altura);
+            });
+        });
+
+    </script>
+</body>
+
+</html>
