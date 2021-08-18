@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #ala {
+            height: 10vh;
+            width: 10vw;
+            position: absolute;
+            left: 50px;
+            top: 80px;
+            display: none;
+        }
+
+        #menu-vertical {
+            position: absolute;
+            z-index: 999;
+            left: 5px;
+            top: 5px;
+            overflow: hidden;
+            border: 1px dashed #CCC;
+            padding: 6px;
+            display: none;
+        }
+
+        a:hover {
+            background-color: rgb(153, 184, 241);
+            transition: 0.6s;
+        }
+
+        a {
+            color: darkslategray;
+            text-decoration: none;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: rgb(247, 247, 247);
+            padding: 10px;
+            border-radius: 10px;
+
+        }
+
+        header {
+            background-color: #151f5d;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 250px;
+        }
+
+        img {
+            height: 27vh;
+            width: 240px;
+        }
+
+        li {
+            float: left;
+            list-style: none;
+            margin: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <section>
+            <img src="1904665_bar_lines_list_menu_nav_icon.png" id="ala" onclick="mostraParagrafo()">
+            <img src="https://s2.glbimg.com/yCWJHRmhUOcOCI0GcqZxYHYbQ2w=/0x0:620x413/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_cf9d035bf26b4646b105bd958f32089d/internal_photos/bs/2020/i/4/xHRXmLR5SsRwzyZk6e6A/2019-09-09-db2019al01916-overfull.jpg"
+                alt="Logo VW">
+        </section>
+
+
+        <div id="menu-vertical">
+            <table cellpadding="10" cellspacing="40">
+                <tr>
+                    <td><a href="index.html">Página Inicial</a></td>
+                </tr>
+                <tr>
+                    <td><a href="quem-somos.html">Quem Somos</a></td>
+                </tr>
+                <tr>
+                    <td><a href="fotos.html">Fotos</a></td>
+                </tr>
+                <tr>
+                    <td><a href="contato.html">Fale Conosco</a></td>
+                </tr>
+                <tr>
+                    <td id="ali" onclick="escondeParagrafo()"><a>. . .</a></td>
+                </tr>
+            </table>
+        </div>
+
+
+        <nav>
+            <ul id="menu-horizontal">
+                <li><a href="index.html">Página Inicial</a></li>
+
+                <li><a href="quem-somos.html">Quem Somos</a></li>
+
+                <li><a href="fotos.html">Fotos</a></li>
+
+                <li><a href="contato.html">Fale Conosco</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <script type="text/javascript">
+        window.addEventListener('resize', function () {
+            var tam = $(window).width();
+            if (tam >= 700) {
+                $("#menu-horizontal").show("slow");
+                $("#ala").hide("slow");
+                $("#menu-vertical").hide("slow");
+
+            } if (tam <= 700) {
+                $("#ala").show("slow");
+                $("#menu-horizontal").hide("slow");
+            }
+        });
+
+        function mostraParagrafo() {
+            $("#menu-vertical").slideDown("slow");
+            $("#ala").hide("slow");
+        }
+
+        function escondeParagrafo() {
+            $("#menu-vertical").slideUp("slow");
+            $("#ala").show("slow");
+        }
+    </script>
+</body>
+
+</html>
