@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Eventos, animações e efeitos</title>
+</head>
+
+<!-- 1) Criar uma página que possua 5 divs, 3 botões, 1 formulário contendo 5 campos de texto(Nome, endereço, telefone, email e cpf) , e 1 select contendo opções de estados do Brasil (Pelo menos 10 estados) e um botão de enviar. Faça o que se pede abaixo: -->
+
+<body>
+    <section id="primeiras_divs">
+        <div id="div1">
+        </div>
+
+
+        <div id="div2">
+        </div>
+
+        <div id="div3">
+        </div>
+
+        <div id="div4">
+        </div>
+
+        <div id="div5">
+        </div>
+        
+        <button id="botao1">Botão 1</button>
+        <button id="botao2">Botão 2</button>
+        <button id="botao3">Botão 3</button>
+
+    <section id="formulario">
+        <fieldset>
+            <form>
+                <label for="name">Nome:</label>
+                <input type="text" id="nome" placeholder="Digite Seu Nome Completo:">
+
+                <label for="name">Endereço:</label>
+                <input type="text" id="endereco" placeholder="Digite Seu Endereço:">
+               
+                <label for="name">Telefone:</label>
+                <input type="text" id="telefone" placeholder="Digite seu Telefone:">
+               
+                <label for="name">E-mail:</label>
+                <input type="text" id="email" placeholder="Digite seu E-mail:">
+               
+                <label for="name">CPF:</label>
+                <input type="text" id="cpf" placeholder="Digite seu CPF:">
+                <select name="Estados" id="select">
+                    <option value="oera">Estados</option>
+                    <option value="oera">AM - Amazonas</option>
+                    <option value="oera">RJ - Rio de Janeiro</option>
+                    <option value="oera">SP - São Paulo</option>
+                </select>
+                <button type="button" id="enviar">Enviar</button>
+            </form>
+        </fieldset>
+    </section>
+    Os seus dados são: <span id="span"> </span>.
+
+
+    <!-- 2) Crie uma página contendo uma div e aplique todos os efeitos que você aprender durante a aula(Hide(), show(), toggle(), fadeIn(), fadeOut(), fadeTo(), fadeToggle(), slideUp(), slideDown(), slideToggle() -->
+    <br>
+    <div id="div_efeitos">
+    </div>
+
+    <button id="botao_efeitos">Esconder/mostrar</button>
+    <button id="fades">Fade/In, Of, Out</button>
+    <button id="slides">slideDown, Up, toggle</button>
+
+    <script src="script_evento.js"></script>
+</body>
+
+</html>
