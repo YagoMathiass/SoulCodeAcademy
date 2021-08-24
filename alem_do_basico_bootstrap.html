@@ -10,45 +10,75 @@
     <title>Além do básico com bootstrap</title>
 </head>
 
-    <style>
-        #header{
-            background-color: rgb(245, 245, 245);
-        }
-        #img{
-            width: 8%;
-        }
-        p{
-            background-color: rgba(226, 226, 226, 0.555);
-            padding: 10%;
-        }
-        section{
-            padding: 5px;
-            box-shadow: 0px 0px 3px 0px;
-            border-radius: 4px;
-        }
-        footer{
-            background-image: linear-gradient(to right, purple 10%, white 80%) ;
-        }
-    </style>
+<style>
+    #header {
+        background-color: rgb(245, 245, 245);
+    }
+
+    #img {
+        width: 8%;
+    }
+
+    img {
+        box-shadow: -10px -10px -10px -10px;
+
+    }
+
+    hr {
+        margin-top: 1vw;
+        height: 0.2vw;
+        background-color: darkorchid;
+        box-shadow: 0px 0px 5px 0px;
+        border-radius: 5px;
+
+    }
+
+    section {
+        padding: 5px;
+        box-shadow: 0px 0px 3px 0px;
+        border-radius: 4px;
+    }
+
+    p {
+        background-color: rgba(226, 226, 226, 0.555);
+        padding: 10%;
+    }
+
+    footer {
+        background-image: linear-gradient(to right, purple 10%, white 80%);
+    }
+
+    a:active {
+        background-color: darkorchid;
+    }
+</style>
 
 <body>
-    <div class="row col-md-12 d-flex justify-content-between" id="header"><img src="https://getbootstrap.com.br/docs/4.1/assets/img/bootstrap-stack.png" alt="Logo" class="img-fluid align-bottom" id="img"> 
-      <a href="#"><h3 class="align-baseline">Quem Somos</h3></a>
-       <a href="#"><h3>Fale conosco</h3></a>
+    <div class="row col-md-12 d-flex justify-content-between align-items-center" id="header">
+        <img src="https://getbootstrap.com.br/docs/4.1/assets/img/bootstrap-stack.png" alt="Logo"
+             class="img-fluid align-bottom " id="img">
+        <a href="#">
+            <h3 class="align-baseline">Quem Somos</h3>
+        </a>
+        <a href="#">
+            <h3>Fale conosco</h3>
+        </a>
     </div>
 
     <img src="https://www.smartt.com/sites/default/files/public/banner-blog-002-opt.png" alt="Banner" class="img-fluid">
 
-    <section class="container col-md-9 mt-5">
-
+    <h1 class="display-3 d-flex justify-content-center mt-5">Bootstrap</h1>
+    <hr class="display-3 d-flex justify-content-center w-50">
+    
+    <section class="container col-md-10 mt-5">
         <div class="row-md-12">
             <main>
                 <table class="table table-responsive-md table-hover table-striped mt-5 text-center border m-1">
-                    <thead class="alert-primary"> 
+                    <thead class="alert-primary">
                         <tr>
-                            <td colspan="2" class="text-center badge-dark" >
-                            Freamworks mais utilizados FrontEnd
-                        </td>
+                            <td colspan="2" class="text-center badge-dark">
+                                Freamworks mais utilizados FrontEnd
+                            </td>
                         </tr>
                         <tr>
                             <td>
@@ -87,50 +117,62 @@
                     </tbody>
                 </table>
         </div>
-                <div class="row text-lg-center mt-5">
-                    <div class="col-4">
-                      <div class="list-group" id="list-tab" role="tablist">
-                        <a class="list-group-item list-group-item-action active" 
-                          data-toggle="list" href="#list-home" role="tab" aria-controls="home">O que é bootstrap?</a>
+        <div class="row text-lg-center mt-5 col-md-12">
+            <div class="col-4">
+                <div class="list-group" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action active" data-toggle="list" href="#list-home"
+                        role="tab" aria-controls="home">O que é bootstrap?</a>
 
-                        <a class="list-group-item list-group-item-action"
-                          data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Os 3 Arquivos Primários do Bootstrap</a>
+                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-profile" role="tab"
+                        aria-controls="profile">Os 3 Arquivos Primários do Bootstrap</a>
 
-                        <a class="list-group-item list-group-item-action"
-                          data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Por que Usar o Bootstrap?</a>
-                      </div>
+                    <a class="list-group-item list-group-item-action" data-toggle="list" href="#list-messages"
+                        role="tab" aria-controls="messages">Por que Usar o Bootstrap?</a>
+                </div>
+            </div>
+
+            <div class="col-8">
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="list-home" role="tabpanel"
+                        aria-labelledby="list-home-list">
+                        <p class="text-justify"> Bootstrap é um framework front-end usado para desenvolver aplicações
+                            web e sites mobile-first, ou seja, com o layout adaptado à tela do dispositivo utilizado
+                            pelo usuário. Saiba tudo sobre essa tecnologia e como utilizá-la em uma aplicação front-end.
+                        </p>
                     </div>
 
-                    <div class="col-8">
-                      <div class="tab-content" id="nav-tabContent">
-                        <div class="tab-pane fade show" id="list-home" role="tabpanel" 
-                          aria-labelledby="list-home-list">
-                          <p class="text-justify"> Bootstrap é um framework front-end usado para desenvolver aplicações web e sites mobile-first, ou seja, com o layout adaptado à tela do dispositivo utilizado pelo usuário. Saiba tudo sobre essa tecnologia e como utilizá-la em uma aplicação front-end.</p>
-                        </div>
+                    <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+                        <p class="text-justify"> Como o Bootstrap consiste em uma coleção de sintaxes que desempenham
+                            funções específicas, ele só faz sentido quando o framework tem diferentes tipos de arquivos
+                            consigo.
+                            Abaixo estão os 3 tipos de arquivos primários que gerenciam a interface de usuário e a
+                            funcionalidade de um site.</p>
+                    </div>
 
-                        <div class="tab-pane fade" id="list-profile" role="tabpanel" 
-                          aria-labelledby="list-profile-list">
-                          <p class="text-justify"> Como o Bootstrap consiste em uma coleção de sintaxes que desempenham funções específicas, ele só faz sentido quando  o framework tem diferentes tipos de arquivos consigo.
-                          Abaixo estão os 3 tipos de arquivos primários que gerenciam a interface de usuário e a funcionalidade de um site.</p>
-                        </div>
-
-                        <div class="tab-pane fade" id="list-messages" role="tabpanel" 
-                          aria-labelledby="list-messages-list">
-                          <p class="text-justify text-capitalize"> Por ser um framework de código aberto, o Bootstrap conta com uma comunidade ativa de desenvolvedores. Além de contribuir com as atualizações nas versões, o que é importante para ter uma ferramenta sempre atualizada, a comunidade também faz a manutenção da documentação, oferece um blog com dicas e novidades sobre a ferramenta, e ajuda em uma página no site Stack Overflow.</p>
-                        </div>
-                      </div>
+                    <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+                        <p class="text-justify text-capitalize"> Por ser um framework de código aberto, o Bootstrap
+                            conta com uma comunidade ativa de desenvolvedores. Além de contribuir com as atualizações
+                            nas versões, o que é importante para ter uma ferramenta sempre atualizada, a comunidade
+                            também faz a manutenção da documentação, oferece um blog com dicas e novidades sobre a
+                            ferramenta, e ajuda em uma página no site Stack Overflow.</p>
                     </div>
                 </div>
+            </div>
+        </div>
 
-                  <ul class="list-group mt-5 mb-5">
-                      <li class="list-group-item list-group-item-success text-capitalize">seja bem vindo.</li> 
-                      <li class="list-group-item list-group-item-warning text-capitalize">você está há algum tempo nesta página.</li>
-                      <li class="list-group-item list-group-item-danger text-capitalize">você já passou tempo demais nesta página.</li>
-                    </ul>
-                </main>
+        <ul class="list-group mt-5 mb-5">
+            <li class="list-group-item list-group-item-success text-capitalize">seja bem vindo.</li>
+            <li class="list-group-item list-group-item-warning text-capitalize">você está há algum tempo nesta página.
+            </li>
+            <li class="list-group-item list-group-item-danger text-capitalize">você já passou tempo demais nesta página.
+            </li>
+        </ul>
+        </main>
     </section>
-    <footer class="text-md-right mt-5">
-        <img src="https://getbootstrap.com.br/docs/4.1/assets/img/bootstrap-stack.png" alt="Logo" class="img-fluid" id="img">
+    <footer class="d-flex justify-content-between align-items-center mt-5 col-md-12" style="color: blanchedalmond;">
+        &copy;Copyright | Eu mesmo, 2021
+        <img src="https://getbootstrap.com.br/docs/4.1/assets/img/bootstrap-stack.png" alt="Logo" class="img-fluid"
+            id="img">
     </footer>
 
 
