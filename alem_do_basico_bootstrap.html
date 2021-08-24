@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="bootstrap-4.6.0-dist/bootstrap-4.6.0-dist/css/bootstrap.min.css">
+    <title>Além do básico com bootstrap</title>
+</head>
+
+    <style>
+        #header{
+            background-color: rgb(245, 245, 245);
+        }
+        #img{
+            width: 8%;
+        }
+        p{
+            background-color: rgba(226, 226, 226, 0.555);
+            padding: 10%;
+        }
+        section{
+            padding: 5px;
+            box-shadow: 0px 0px 3px 0px;
+            border-radius: 4px;
+        }
+        footer{
+            background-image: linear-gradient(to right, purple 10%, white 80%) ;
+        }
+    </style>
+
+<body>
+    <div class="row col-md-12 d-flex justify-content-between" id="header"><img src="https://getbootstrap.com.br/docs/4.1/assets/img/bootstrap-stack.png" alt="Logo" class="img-fluid align-bottom" id="img"> 
+      <a href="#"><h3 class="align-baseline">Quem Somos</h3></a>
+       <a href="#"><h3>Fale conosco</h3></a>
+    </div>
+
+    <img src="https://www.smartt.com/sites/default/files/public/banner-blog-002-opt.png" alt="Banner" class="img-fluid">
+
+    <section class="container col-md-9 mt-5">
+
+        <div class="row-md-12">
+            <main>
+                <table class="table table-responsive-md table-hover table-striped mt-5 text-center border m-1">
+                    <thead class="alert-primary"> 
+                        <tr>
+                            <td colspan="2" class="text-center badge-dark" >
+                            Freamworks mais utilizados FrontEnd
+                        </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Posição
+                            </td>
+                            <td>
+                                Freamwork
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                1
+                            </td>
+                            <td>
+                                Foundation
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                2
+                            </td>
+                            <td>
+                                Bootstrap
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                3
+                            </td>
+                            <td>
+                                Meteor.js
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+                <div class="row text-lg-center mt-5">
+                    <div class="col-4">
+                      <div class="list-group" id="list-tab" role="tablist">
+                        <a class="list-group-item list-group-item-action active" 
+                          data-toggle="list" href="#list-home" role="tab" aria-controls="home">O que é bootstrap?</a>
+
+                        <a class="list-group-item list-group-item-action"
+                          data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Os 3 Arquivos Primários do Bootstrap</a>
+
+                        <a class="list-group-item list-group-item-action"
+                          data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Por que Usar o Bootstrap?</a>
+                      </div>
+                    </div>
+
+                    <div class="col-8">
+                      <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show" id="list-home" role="tabpanel" 
+                          aria-labelledby="list-home-list">
+                          <p class="text-justify"> Bootstrap é um framework front-end usado para desenvolver aplicações web e sites mobile-first, ou seja, com o layout adaptado à tela do dispositivo utilizado pelo usuário. Saiba tudo sobre essa tecnologia e como utilizá-la em uma aplicação front-end.</p>
+                        </div>
+
+                        <div class="tab-pane fade" id="list-profile" role="tabpanel" 
+                          aria-labelledby="list-profile-list">
+                          <p class="text-justify"> Como o Bootstrap consiste em uma coleção de sintaxes que desempenham funções específicas, ele só faz sentido quando  o framework tem diferentes tipos de arquivos consigo.
+                          Abaixo estão os 3 tipos de arquivos primários que gerenciam a interface de usuário e a funcionalidade de um site.</p>
+                        </div>
+
+                        <div class="tab-pane fade" id="list-messages" role="tabpanel" 
+                          aria-labelledby="list-messages-list">
+                          <p class="text-justify text-capitalize"> Por ser um framework de código aberto, o Bootstrap conta com uma comunidade ativa de desenvolvedores. Além de contribuir com as atualizações nas versões, o que é importante para ter uma ferramenta sempre atualizada, a comunidade também faz a manutenção da documentação, oferece um blog com dicas e novidades sobre a ferramenta, e ajuda em uma página no site Stack Overflow.</p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+
+                  <ul class="list-group mt-5 mb-5">
+                      <li class="list-group-item list-group-item-success text-capitalize">seja bem vindo.</li> 
+                      <li class="list-group-item list-group-item-warning text-capitalize">você está há algum tempo nesta página.</li>
+                      <li class="list-group-item list-group-item-danger text-capitalize">você já passou tempo demais nesta página.</li>
+                    </ul>
+                </main>
+    </section>
+    <footer class="text-md-right mt-5">
+        <img src="https://getbootstrap.com.br/docs/4.1/assets/img/bootstrap-stack.png" alt="Logo" class="img-fluid" id="img">
+    </footer>
+
+
+
+
+    <!-- Biblioteca jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <!-- Local -->
+    <script src="bootstrap-4.6.0-dist/bootstrap-4.6.0-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
